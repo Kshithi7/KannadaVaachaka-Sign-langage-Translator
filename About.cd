@@ -1,0 +1,20 @@
+🧾 About the Project
+Kannada Vaachaka is a real-time sign language translator designed to bridge communication gaps for individuals with hearing and speech impairments, especially within Kannada-speaking communities.
+
+The system uses an ESP32 development board to collect gesture data from a PAJ7620 gesture recognition sensor, and processes it on a laptop using OpenCV and MediaPipe for camera-based hand gesture recognition. The project features dual gesture input modes (sensor + vision), offering double verification for enhanced accuracy.
+
+Recognized gestures are translated into Kannada speech output through pre-recorded audio files using Pygame, making communication more inclusive and intuitive.
+
+🔍 Key Features
+Real-time gesture recognition using both PAJ7620 and laptop webcam
+
+Kannada speech output powered by Pygame
+
+MediaPipe for accurate hand tracking and classification
+
+Uses laptop as the main processor (instead of Raspberry Pi)
+
+Cost-effective and regionally focused for Kannada users
+
+🎯 Goal
+To build an affordable, accessible, and regionally adapted sign language translation tool that helps Kannada-speaking individuals with hearing and speech impairments communicate easily and independently.
