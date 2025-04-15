@@ -42,6 +42,12 @@ This project aims to assist the hearing and speech impaired by translating hand 
 ![Connection](connection.png)
 
 ---
+## 📦 Implementation Details
+
+For full implementation steps, [click here to view the Implementation.md file](./implementation.md).
+
+
+---
 
 ## 🚀 Future Scope
 - Replace laptop processing with **Raspberry Pi**
