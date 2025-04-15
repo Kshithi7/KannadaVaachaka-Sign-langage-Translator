@@ -42,7 +42,7 @@ This project aims to assist the hearing and speech impaired by translating hand 
 
 ## 🔄 Connection
 
-![Flowchart](connection.png)
+![Connection](connection.png)
 
 ---
 
@@ -60,7 +60,8 @@ This project aims to assist the hearing and speech impaired by translating hand 
 ---
 
 ## 📷 Demo / Images
-(You can upload images later here if you have them!)
+![Finger Count](finger1.png)
+![Finger Recognition](final.png)
 
 ---
 
