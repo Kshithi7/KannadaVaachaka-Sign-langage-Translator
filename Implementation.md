@@ -1,59 +1,114 @@
-📦 Implementation Details - Kannada Vaachaka
+# 🛠️ Kannada Vaachaka – Implementation Guide
 
-The following outlines the implementation phase of the Kannada Sign Language Translator project using ESP32, PAJ7620 sensor, and MediaPipe with OpenCV.
-
----
-
-🛠 Hardware Setup
-
-🔹 ESP32 Dev Board  
-- Configured to receive input from the PAJ7620 gesture sensor  
-- Connected via USB to the laptop for serial communication
-
-🔹 PAJ7620 Gesture Sensor  
-- Recognizes up to 9 hand gestures  
-- Communicates via I2C with the ESP32 board
-
-🔹 Laptop Webcam  
-- Used for real-time gesture recognition using OpenCV + MediaPipe
+This file documents the complete procedure followed to build the real-time Kannada Sign Language Translator using **ESP32**, **PAJ7620 gesture sensor**, and **OpenCV + MediaPipe** in Python.
 
 ---
 
-🧠 Software Setup
+## 🧠 Step-by-Step Implementation
 
-🔹 Arduino IDE  
-- Programmed the ESP32 to interface with PAJ7620  
-- Serially transmits recognized gesture data to the Python script
+### 1️⃣ Initial Planning & Documentation
 
-🔹 Python Libraries Used:
-- opencv-python → for webcam input and visualization  
-- mediapipe → for real-time hand gesture recognition  
-- pygame / playsound → to play Kannada audio  
-- pyserial → to read data from ESP32 via serial
+Before jumping into development, the following planning was done:
 
----
-
-🧩 System Workflow
-
-1. **Sensor-Based Gesture Detection**
-   - ESP32 reads gesture data from PAJ7620
-   - Sends gesture code to the laptop via Serial
-
-2. **Webcam Gesture Verification**
-   - Python + MediaPipe recognizes the same gesture from webcam input
-   - If both sensor and webcam detect the same gesture ➜ Validation Success
-
-3. **Audio Output**
-   - Corresponding Kannada audio file (e.g., namaskara.mp3) is played
-   - Ensures real-time response and communication
+- ✅ Listed out commonly used Kannada sign gestures.
+- ✅ Mapped each gesture to:
+  - A **Kannada translated text**
+  - A **Kannada audio file** (e.g., `namaskara.mp3`)
+- ✅ Created a document to maintain a mapping table for Gesture ➜ Text ➜ Audio.
 
 ---
 
-🔁 Loop Flow (Python Snippet)
+### 2️⃣ Software Installation & Setup
 
-```python
+To begin the development, the essential software and libraries were installed.
+---
+
+#### 📌 Python Setup
+
+- Install **Python IDLE** from [python.org](https://www.python.org/downloads/)
+- Make sure Python is added to system PATH.
+- Check version:  
+  ```bash
+  python --version
+  
+ ----
+ 
+####📌 Required Python Libraries
+Install the following packages:
+
+pip install opencv-python
+pip install mediapipe
+pip install pygame
+pip install pyserial
+pip install pyaudio
+
+💡 Make sure to check compatibility for your Python version, especially for pyaudio.
+ ---
+ 
+📌 ESP32 Setup
+- Install the ESP32 board in the Arduino IDE via the board manager.
+- Connect ESP32 to the laptop via USB.
+- Upload code to read gestures from PAJ7620 sensor and send data over Serial.
+
+ ---
+ 
+3️⃣ Project Folder Structure
+-Organize your project directory like this:
+
+KannadaVaachaka/
+│
+├── main.py
+├── esp32_code.ino
+├── /audio/
+│   ├── namaskara.mp3
+│   ├── hegiddira.mp3
+│   └── ...
+├── /docs/
+│   └── implementation.md
+
+---
+
+4️⃣ Linking Audio to Gestures
+Each recognized gesture corresponds to a Kannada audio file.
+Example logic in Python:
+
+if gesture == "up":
+    play_audio("audio/namaskara.mp3")
+elif gesture == "down":
+    play_audio("audio/hegiddira.mp3")
+# and so on...
+- Ensure that all .mp3 files are inside the /audio/ folder and named clearly.
+
+---
+
+5️⃣ Python Code – Main Flow
+The Python code:
+--Reads gesture input via Serial from ESP32 + PAJ7620 sensor.
+--Uses MediaPipe with OpenCV to recognize webcam gestures.
+--If both sensor and webcam detect the same gesture → Trigger Kannada audio.
+
 if serial_input == "up" and mediapipe_gesture == "up":
     play_audio("audio/namaskara.mp3")
-elif serial_input == "down" and mediapipe_gesture == "down":
-    play_audio("audio/yesu.mp3")
-# ... and so on for other gestures
+
+---
+
+6️⃣ Sensor Function Code (ESP32 + PAJ7620)
+The ESP32 is programmed using Arduino IDE to:
+ - Communicate with PAJ7620 over I2C
+ -Detect gestures and send simplified values (up, down, etc.) to Python via Serial
+
+---
+
+7️⃣ Testing & Debugging
+Each module was tested individually and then together:
+
+✅ ESP32 + PAJ7620 sensor tested for gesture recognition
+
+✅ Webcam tested using OpenCV + MediaPipe
+
+✅ Audio tested for playback with correct triggers
+
+✅ Dual verification of gestures ensured higher accuracy
+
+✅ Latency was maintained under 1 second
+---
