@@ -44,7 +44,7 @@ This project aims to assist the hearing and speech impaired by translating hand 
 ---
 ## 📦 Implementation Details
 
-For full implementation steps, [click here to view the Implementation.md file](./implementation.md).
+For full implementation steps, [click here to view the Implementation.md file](./Implementation.md).
 
 
 ---
