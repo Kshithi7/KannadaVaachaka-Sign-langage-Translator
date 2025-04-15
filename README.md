@@ -60,7 +60,10 @@ This project aims to assist the hearing and speech impaired by translating hand 
 ---
 
 ## 📷 Demo / Images
+-Finger Count on OpenCV
 ![Finger Count](finger1.png)
+
+-Text recognition of corresponding gestures
 ![Finger Recognition](final.png)
 
 ---
