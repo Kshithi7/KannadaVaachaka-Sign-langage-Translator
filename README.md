@@ -44,7 +44,7 @@ This project aims to assist the hearing and speech impaired by translating hand 
 ---
 ## 📦 Implementation Details
 
-For full implementation steps, [click here to view the Implementation.md file](./Implementation.md).
+For full implementation steps, [click here to view the Implementation.md file](./implementation.md).
 
 ---
 
@@ -59,7 +59,7 @@ For full implementation steps, [click here to view the Implementation.md file](.
 ## ✨ Status
 - To make it easy, I have divded the code into two sections.
 - Intially, developed code for just finger count - [the finger count code is here](./fingercount.py).
-- Later on the entire code for the project was written, keeping in mind inputs and outputs [Final and Complete code of the project](./Project_code.py).
+- Later on the entire code for the project was written, keeping in mind inputs and outputs [Final and Complete code of the project](./project_code.py).
 
 ---
 
