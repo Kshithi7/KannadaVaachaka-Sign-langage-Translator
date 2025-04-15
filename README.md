@@ -30,13 +30,19 @@ This project aims to assist the hearing and speech impaired by translating hand 
 
 ## 🔧 Block Diagram
 
-![Block Diagram](Block diagram.jpg)
+![Block Diagram](blockdiagram.png)
 
 ---
 
 ## 🔄 Flowchart
 
 ![Flowchart](flowchart.png)
+
+---
+
+## 🔄 Connection
+
+![Flowchart](connection.png)
 
 ---
 
@@ -55,11 +61,6 @@ This project aims to assist the hearing and speech impaired by translating hand 
 
 ## 📷 Demo / Images
 (You can upload images later here if you have them!)
-
----
-
-## 📁 Folder Structure
-*Coming soon — currently documentation only.*
 
 ---
 
