@@ -28,6 +28,18 @@ This project aims to assist the hearing and speech impaired by translating hand 
 
 ---
 
+## 🔧 Block Diagram
+
+![Block Diagram](Block diagram.jpg)
+
+---
+
+## 🔄 Flowchart
+
+![Flowchart](flowchart.png)
+
+---
+
 ## 🚀 Future Scope
 - Replace laptop processing with **Raspberry Pi**
 - Add **gesture-based alphabets and numbers**
