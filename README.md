@@ -7,8 +7,6 @@ This project aims to assist the hearing and speech impaired by translating hand 
 ## 🔧 Hardware Components Used
 - **ESP32 Development Board**
 - **PAJ7620 Gesture Sensor**
-- **LCD Display** (non-I2C)
-- **DIP Switches**
 - **Laptop** (for processing via OpenCV)
 
 ---
@@ -17,7 +15,6 @@ This project aims to assist the hearing and speech impaired by translating hand 
 - Recognizes **5 hand gestures using OpenCV**
 - Recognizes **9 gestures using PAJ7620 gesture sensor**
 - **Converts gesture inputs into Kannada speech output**
-- Uses **DIP switches** to toggle sensor modes and options
 
 ---
 
@@ -61,9 +58,11 @@ This project aims to assist the hearing and speech impaired by translating hand 
 
 ## 📷 Demo / Images
 -Finger Count on OpenCV
+
 ![Finger Count](finger1.png)
 
 -Text recognition of corresponding gestures
+
 ![Finger Recognition](final.png)
 
 ---
