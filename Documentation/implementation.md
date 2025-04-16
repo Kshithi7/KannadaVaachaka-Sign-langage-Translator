@@ -10,7 +10,9 @@ Initially, the project was planned using **Flex Sensors** for gesture detection.
 ### 🔌 Flex Sensor Connection Diagram
 *A wiring diagram showing how each flex sensor would connect to the microcontroller.*
 
-> (Embed your flex sensor image here if it's uploaded to GitHub)
+> If u want to use flex sensor..click here for connection diagram:
+![Flex Sensor Connection](./flex_diagram.png)
+
 
 ### ❌ Why It Was Changed
 
