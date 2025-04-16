@@ -3,6 +3,25 @@
 This file documents the complete procedure followed to build the real-time Kannada Sign Language Translator using **ESP32**, **PAJ7620 gesture sensor**, and **OpenCV + MediaPipe** in Python.
 
 ---
+## 🛣️ Initial Idea: Flex Sensors
+
+Initially, the project was planned using **Flex Sensors** for gesture detection. The idea was to attach flex sensors on fingers to measure the degree of bending, allowing identification of specific hand poses.
+
+### 🔌 Flex Sensor Connection Diagram
+*A wiring diagram showing how each flex sensor would connect to the microcontroller.*
+
+> (Embed your flex sensor image here if it's uploaded to GitHub)
+
+### ❌ Why It Was Changed
+
+However, due to **unavailability of flex sensors**, this idea was dropped. Instead, we switched to:
+
+- **PAJ7620 gesture recognition sensor** (for 9 gestures)
+- **MediaPipe + OpenCV** (for finger detection)
+
+This transition allowed for **non-contact** and **camera-based** recognition, making the system more hygienic, accessible, and cost-efficient.
+
+---
 
 ## 🧠 Step-by-Step Implementation
 
